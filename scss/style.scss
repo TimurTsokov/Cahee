@@ -20,28 +20,32 @@ body {
   min-height: 100%;
   color: $text-color;
 }
-.container{
+
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  //position: relative;
 }
-.header{
+
+.header {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
 }
-.nav{
+
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &__list{
-    li{
+  &__list {
+    li {
       display: inline-block;
       margin-left: 30px;
     }
   }
-  &__link{
+  &__link {
     text-decoration: none;
     text-transform: uppercase;
     color: $text-color;
@@ -52,35 +56,103 @@ body {
     transition: all .4s linear;
     &:hover,
     &:focus,
-    &.active{
+    &.active {
       border-color: $bg-color;
     }
   }
 }
-.logo{
+
+.logo {
   font-family: Pacifico;
   text-decoration: none;
   color: $text-color;
   font-size: 5rem;
 }
-.section{
-  &--bg{
+
+.section {
+  &--bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-  &--100h{
+  &--100h {
     height: 100vh;
   }
-  &__title{}
-  &__text{}
-  &__btn{}
+  &__title {
+    color: $text-color;
+    font-size: 6.0rem;
+    font-weight: 900;
+    margin: 0;
+    &--medium {
+      color: #ffffff;
+      font-size: 9.0rem;
+      font-weight: 700;
+    }
+  }
+  &__text {
+    color: $text-color;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-bottom: 35px;
+    &--white {
+      color: #ffffff;
+      font-size: 1.7rem;
+      font-weight: 300;
+    }
+  }
+  &__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.0rem;
+    color: #ffffff;
+    font-weight: 300;
+    background-color: $bg-color;
+    padding: 20px 25px;
+    border: 1px solid transparent;
+    transition: all .4s ease-in-out;
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: $bg-color;
+      border-color: $bg-color;
+    }
+    &--column {
+      text-transform: none;
+      background-color: #ffffff;
+      color: $text-color;
+      margin-bottom: 20px;
+
+    }
+  }
+  &__btn--flex {
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+  }
+  &__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    &--link {
+      svg {
+        transition: all .4s ease-in-out;
+      }
+      svg:hover,
+      svg:focus {
+        transform: rotateX(180deg);
+      }
+    }
+  }
 }
-.flex-row{
+
+.flex-row {
+  //position: absolute;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  //bottom: 50%;
 
-  &__item{
+  &__item {
     flex: 0 0 50%;
   }
 }
