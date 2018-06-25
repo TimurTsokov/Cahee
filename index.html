@@ -6,105 +6,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--<link rel="icon" href="img/">-->
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-	<link rel="icon" href="img/logo.png">
+  <link rel="icon" href="img/logo.png">
   <link rel="stylesheet" href="scss/_normalize.scss">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+<header class="header">
+  <div class="container">
+	 <nav class="nav">
+		<a href="#" class="logo">Cahee</a>
+		<ul class="nav__list">
+		  <li><a class="nav__link active" href="">home</a></li>
+		  <li><a class="nav__link" href="">about</a></li>
+		  <li><a class="nav__link" href="">services</a></li>
+		  <li><a class="nav__link" href="">gallery</a></li>
+		  <li><a class="nav__link" href="">blog</a></li>
+		  <li><a class="nav__link" href="">contact</a></li>
+		</ul>
+	 </nav>
+  </div>
+</header>
+<main>
+  <section class="section section--100h section--bg" style="background-image:url(img/img.jpg);">
 	 <div class="container">
-		<nav class="nav">
-		  <a href="#" class="logo">Cahee</a>
-		  <ul class="nav__list">
-			 <li><a class="nav__link active" href="">home</a></li>
-			 <li><a class="nav__link" href="">about</a></li>
-			 <li><a class="nav__link" href="">services</a></li>
-			 <li><a class="nav__link" href="">gallery</a></li>
-			 <li><a class="nav__link" href="">blog</a></li>
-			 <li><a class="nav__link" href="">contact</a></li>
-		  </ul>
-		</nav>
-	 </div>
-  </header>
-  <main>
-	 <section class="section section--100h section--bg" style="background-image:url(img/img.jpg);">
-		<div class="container">
-			<div class="flex-row">
-				<div class="flex-row__item">
-					<h1 class="section__title">Fresh Life</h1>
-					<div class="section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur
-						possimus totam velit?
-					</div>
-					<a href="#" class="section__btn">get free now</a>
-				</div>
-			</div>
-			<div class="section__scroll">
-				<a href="#" class="section__scroll--link">
-					<svg
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							width="24px" height="40px">
-						<image x="0px" y="0px" width="24px" height="40px"
-							   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAoCAQAAABOBPLeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBhkJDxCg98q4AAADEUlEQVQ4y22VT2hcVRjFf+fmTerSVCdQmICELvJnMFBwF2xR1I5LcVEUmmBXddFVu3AV6saFdWEXtggt1VoQdNON0ypKwY0gEkoj6aJkk2ixiU4RN5kZ5rh4f+59Q94wzHv3nXvPd8757h0tIIwwQGBOr/MKbT8n+Nsb+onveciIAiO0GOFLnGVFzwAQR/e5oSvcryYsUFxntOYZ0J6/06afCj/LPB01wdtc1LV8SlYU9IE+JNNTf8zX2mZQMDSY8SldYEZXmeYjEBNNQO/pEzf0G2/xrXoe5ZRCI3r62Xd4iZZe5k+tGy1Cmy4tr+ttb+VAN+gAXQ2cP8/yDce04w4bwZM+55Z7WmFL+WtY1W1ua7WUxxYr6rnFOSYDRzktdIkHxpA7s2yEl134BdrwJcFpHQ16Q4fY9a2cPP8wFEbDnDH/csu7HOJk4ATQ5XFeTM4iG7ArRgyP1QVOBLcNm+oXsZQl5KuWqwP0vQluB5rCvdz3EuwxcD5KT/B8oAEMS5iK3yjXkWsIaoSKsoAYQRAGxRKpWDNXUMUy9kEwcMGYsmaq1o0quO7jjLhOZURUVjAooRX8ypJhoMLm8hImK/1PdQgPBAlvWbII8XZcfvQpvc9UOlO6XT3Xc6BgC3XTTOmMx5jKTg4k5eiActKE8nOiMixOUuzRZCznydIH1/ooNqOS8Yxata6gaf5OPAxpAvUIa9un0pWNww219ccbPhwsM8LTXWIgaFB2lGpp1HMQhgwYBPZAU2kR0d7YNAaYAvaCHwDzTEZQCk4MmGROsBF0z3CSIzC+o8f8O6I3wfcCd9lnmnfTlnMt22KJd9z0PneCH+lL4/O0D8qj4lnkPHCTR4E+l9nRFF9oNt1MaYsw65scZkefqj/RRE/4lw4tlvmFv+q5CMOLfMUxDXTBd2FiGqN1hhynpVOa4A/+Y1QoaPACZ/U5swxZ02Xl/3GFO2dYY8bwhC4P9Y/hsObc0bTRti/qWoFbiDqXeF+rnqyLps8NPuN+1Y4Lyemm4Hm95le16CZol9/9o35g06N4cvwPO9NlfqwZk6QAAAAASUVORK5CYII="/>
-					</svg>
-				</a>
-			</div>
+		<div class="flex-row">
+		  <div class="flex-row__item">
+			 <h1 class="section__title">Fresh Life</h1>
+			 <div
+				  class="section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur possimus totam velit?</div>
+			 <a href="#" class="section__btn">get free now</a>
+		  </div>
 		</div>
-	 </section>
-	  <section class="section section--100h section--bg" style="background-color:#00c3c3;">
-		  <div class="container">
-			  <div class="flex-row">
-				  <div class="flex-row__item">
-					  <img src="img/img2.png" alt="">
-				  </div>
-				  <div class="flex-row__item">
-					  <h1 class="section__title section__title--medium">About us</h1>
-					  <div class="section__text section__text--white">
-						  <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-							  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-							  voluptate velit esse cillum.</p>
-						  <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-							  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-							  inventore.</p>
-					  </div>
-				  </div>
-			  </div>
+		<div class="section__scroll">
+		  <a href="#" class="section__scroll--link">
+			 <svg
+				  xmlns:xlink="http://www.w3.org/1999/xlink"
+				  xmlns="http://www.w3.org/2000/svg"
+				  width="24px" height="40px">
+				<image x="0px" y="0px" width="24px" height="40px"
+						 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAoCAQAAABOBPLeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBhkJDxCg98q4AAADEUlEQVQ4y22VT2hcVRjFf+fmTerSVCdQmICELvJnMFBwF2xR1I5LcVEUmmBXddFVu3AV6saFdWEXtggt1VoQdNON0ypKwY0gEkoj6aJkk2ixiU4RN5kZ5rh4f+59Q94wzHv3nXvPd8757h0tIIwwQGBOr/MKbT8n+Nsb+onveciIAiO0GOFLnGVFzwAQR/e5oSvcryYsUFxntOYZ0J6/06afCj/LPB01wdtc1LV8SlYU9IE+JNNTf8zX2mZQMDSY8SldYEZXmeYjEBNNQO/pEzf0G2/xrXoe5ZRCI3r62Xd4iZZe5k+tGy1Cmy4tr+ttb+VAN+gAXQ2cP8/yDce04w4bwZM+55Z7WmFL+WtY1W1ua7WUxxYr6rnFOSYDRzktdIkHxpA7s2yEl134BdrwJcFpHQ16Q4fY9a2cPP8wFEbDnDH/csu7HOJk4ATQ5XFeTM4iG7ArRgyP1QVOBLcNm+oXsZQl5KuWqwP0vQluB5rCvdz3EuwxcD5KT/B8oAEMS5iK3yjXkWsIaoSKsoAYQRAGxRKpWDNXUMUy9kEwcMGYsmaq1o0quO7jjLhOZURUVjAooRX8ypJhoMLm8hImK/1PdQgPBAlvWbII8XZcfvQpvc9UOlO6XT3Xc6BgC3XTTOmMx5jKTg4k5eiActKE8nOiMixOUuzRZCznydIH1/ooNqOS8Yxata6gaf5OPAxpAvUIa9un0pWNww219ccbPhwsM8LTXWIgaFB2lGpp1HMQhgwYBPZAU2kR0d7YNAaYAvaCHwDzTEZQCk4MmGROsBF0z3CSIzC+o8f8O6I3wfcCd9lnmnfTlnMt22KJd9z0PneCH+lL4/O0D8qj4lnkPHCTR4E+l9nRFF9oNt1MaYsw65scZkefqj/RRE/4lw4tlvmFv+q5CMOLfMUxDXTBd2FiGqN1hhynpVOa4A/+Y1QoaPACZ/U5swxZ02Xl/3GFO2dYY8bwhC4P9Y/hsObc0bTRti/qWoFbiDqXeF+rnqyLps8NPuN+1Y4Lyemm4Hm95le16CZol9/9o35g06N4cvwPO9NlfqwZk6QAAAAASUVORK5CYII="/>
+			 </svg>
+		  </a>
+		</div>
+	 </div>
+  </section>
+  <section class="section section--100h section--bg" style="background-color:#00c3c3;">
+	 <div class="container">
+		<div class="flex-row">
+		  <div class="flex-row__item">
+			 <img src="img/img2.png" alt="">
 		  </div>
-	 </section>
-	  <section class="section section--100h section--bg" style="background-color:#70bfff;">
-		  <div class="container">
-			  <div class="flex-row">
-				  <div class="flex-row__item">
-					  <div class="section__text section__btn--flex">
-						  <a href="#" class="section__btn section__btn--column">Online Shopping</a>
-						  <a href="#" class="section__btn section__btn--column">Quality Product</a>
-						  <a href="#" class="section__btn section__btn--column">Domestic & International Delivery</a>
-						  <a href="#" class="section__btn section__btn--column">Well Organized</a>
-					  </div>
-				  </div>
-				  <div class="flex-row__item">
-					  <h1 class="section__title section__title--small">Our Services</h1>
-					  <img src="img/img3.png" alt="">
-				  </div>
-			  </div>
+		  <div class="flex-row__item">
+			 <h2 class="section__title section__title--medium">About us</h2>
+			 <div class="section__text section__text--white">
+				<p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+				  voluptate velit esse cillum.</p>
+				<p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+				  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+				  inventore.</p>
+			 </div>
 		  </div>
-	 </section>
-	 <section>
-		<div class="container"></div>
-	 </section>
-	 <section>
-		<div class="container"></div>
-	 </section>
-	 <section>
-		<div class="container"></div>
-	 </section>
-	 <section>
-		<div class="container"></div>
-	 </section>
-  </main>
-  <footer class="footer">
+		</div>
+	 </div>
+  </section>
+  <section class="section section--100h section--bg" style="background-color:#70bfff;">
+	 <div class="container">
+		<div class="flex-row">
+		  <div class="flex-row__item">
+			 <div class="section__text section__btn--flex">
+				<a href="#" class="section__btn section__btn--column">Online Shopping</a>
+				<a href="#" class="section__btn section__btn--column">Quality Product</a>
+				<a href="#" class="section__btn section__btn--column">Domestic & International Delivery</a>
+				<a href="#" class="section__btn section__btn--column">Well Organized</a>
+			 </div>
+		  </div>
+		  <div class="flex-row__item">
+			 <h2 class="section__title section__title--small">Our Services</h2>
+			 <img src="img/img3.png" alt="">
+		  </div>
+		</div>
+	 </div>
+  </section>
+  <section class="section section--100h section--bg" style="background-color:#ffe92f;">
+	 <div class="container">
+		<h2 class="section__title section__title--black">Gallery</h2>
+		<div
+			 class="section__text section__text--center">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+		<div class="flex-row flex-row--wrap">
+		  <div class="flex-item"><img src="img/abrikos.jpg" alt=""></div>
+		  <div class="flex-item--column">
+			 <div class="flex-item"><img src="img/chernika.jpg" alt=""></div>
+			 <div class="flex-item"><img src="img/shelk.jpg" alt=""></div>
+		  </div>
+		  <div class="flex-item"><img src="img/glas.jpg" alt=""></div>
+		  <div class="flex-item"><img src="img/hyrma.jpg" alt=""></div>
+		</div>
+		<a href="#" class="section__btn">View more</a>
+	 </div>
+  </section>
+  <section>
 	 <div class="container"></div>
-  </footer>
-  <!--<script src="scss-lint-plugin/lib/scss-lint-plugin.jar"></script>-->
+  </section>
+  <section>
+	 <div class="container"></div>
+  </section>
+  <section>
+	 <div class="container"></div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container"></div>
+</footer>
+<!--<script src="scss-lint-plugin/lib/scss-lint-plugin.jar"></script>-->
 </body>
 </html>

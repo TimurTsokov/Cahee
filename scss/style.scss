@@ -25,7 +25,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  //position: relative;
 }
 
 .header {
@@ -39,6 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  //z-index: 900;
   &__list {
     li {
       display: inline-block;
@@ -88,6 +88,19 @@ body {
       font-size: 9.0rem;
       font-weight: 700;
     }
+    &--small {
+      color: #ffffff;
+      font-size: 9.0rem;
+      font-weight: 700;
+      position: absolute;
+      bottom: 30%;
+    }
+    &--black {
+      color: $text-color;
+      font-size: 9.0rem;
+      font-weight: 700;
+      text-align: center;
+    }
   }
   &__text {
     color: $text-color;
@@ -99,6 +112,14 @@ body {
       font-size: 1.7rem;
       font-weight: 300;
     }
+    &--center {
+      text-align: center;
+      color: $text-color;
+      font-size: 1.7rem;
+      font-weight: 300;
+      width: 50%;
+      margin: 0 auto;
+    }
   }
   &__btn {
     text-decoration: none;
@@ -108,7 +129,7 @@ body {
     font-weight: 300;
     background-color: $bg-color;
     padding: 20px 25px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: all .4s ease-in-out;
     &:hover,
     &:focus {
@@ -122,7 +143,56 @@ body {
       color: $text-color;
       margin-bottom: 20px;
       padding: 40px 170px 40px 70px;
-
+      width: 400px;
+      box-shadow: 0px 7px 27px -5px #45769e;
+      position: relative;
+      font-size: 2.0rem;
+      font-weight: 900;
+      //display: inline-block;
+      &:nth-child(1):after {
+        content: '';
+        width: 70px;
+        height: 70px;
+        background: url("../img/icon1.png") no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 5%;
+        top: 25px;
+        bottom: 25px;
+      }
+      &:nth-child(2):after {
+        content: '';
+        width: 70px;
+        height: 70px;
+        background: url("../img/icon2.png") no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 5%;
+        top: 25px;
+        bottom: 25px;
+      }
+      &:nth-child(3):after {
+        content: '';
+        width: 70px;
+        height: 70px;
+        background: url("../img/icon3.png") no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 5%;
+        top: 25px;
+        bottom: 25px;
+      }
+      &:nth-child(4):after {
+        content: '';
+        width: 70px;
+        height: 70px;
+        background: url("../img/icon4.png") no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 5%;
+        top: 25px;
+        bottom: 25px;
+      }
     }
   }
   &__btn--flex {
@@ -147,14 +217,23 @@ body {
 }
 
 .flex-row {
-  //position: absolute;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   //bottom: 50%;
-
   &__item {
     flex: 0 0 50%;
+
+  }
+  &--wrap {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .flex-item--column {
+    display: flex;
+    flex-direction: column;
   }
 }
 
