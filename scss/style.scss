@@ -25,6 +25,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 
 .header {
@@ -38,7 +39,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //z-index: 900;
   &__list {
     li {
       display: inline-block;
@@ -100,6 +100,10 @@ body {
       font-size: 9.0rem;
       font-weight: 700;
       text-align: center;
+    }
+    &--extrasmall {
+      font-size: 4.0rem;
+      font-weight: 700;
     }
   }
   &__text {
@@ -194,6 +198,42 @@ body {
         bottom: 25px;
       }
     }
+    &--blue {
+      background: #5585a2;
+      padding: 20px 40px;
+      //margin: 0;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &:hover,
+      &:focus {
+        background: #ffffff;
+        border-color: #5585a2;
+        color: #5585a2;
+      }
+    }
+    &--green {
+      background: #96b92c;
+      padding: 20px 30px;
+      position: absolute;
+      left: 50%;
+      //top: 280px;
+
+      &:hover,
+      &:focus {
+        background: #ffffff;
+        border-color: #96b92c;
+        color: #96b92c;
+      }
+    }
+  }
+  &__email {
+    width: 100%;
+    padding: 20px 0 20px 15px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: 1px solid $text-color;
+
   }
   &__btn--flex {
     display: flex;
@@ -224,12 +264,14 @@ body {
   //bottom: 50%;
   &__item {
     flex: 0 0 50%;
-
   }
   &--wrap {
     position: static;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .flex-item--size {
+    //overflow: hidden;
   }
   .flex-item--column {
     display: flex;
