@@ -124,6 +124,7 @@ body {
   }
   &__text {
     margin-bottom: $offset;
+    margin-top: 10px;
     &--1-2 {
       width: 50%;
       margin: 0 auto;
@@ -131,6 +132,17 @@ body {
     &--2row {
       max-height: 80px;
       overflow: hidden;
+    }
+    b {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    p {
+      margin-top: 0;
+      a {
+        text-decoration: none;
+        margin: 0;
+      }
     }
   }
   &__btn {
