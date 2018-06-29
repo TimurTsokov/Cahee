@@ -2,3 +2,4 @@
 *.psd
 node_modules
 scss-lint-plugin
+package-lock.json
