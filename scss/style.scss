@@ -46,6 +46,9 @@ body {
   text-decoration: none;
   color: $text-color;
   font-size: 5rem;
+  &--white {
+    color: #b9b9b9;
+  }
 }
 
 .nav {
@@ -434,6 +437,23 @@ body {
 
   .section--100h & {
     height: calc(100vh - 2 * 100px);
+  }
+}
+
+.footer {
+  color: #b9b9b9;
+}
+
+.flex__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex__footer-item {
+  b {
+    color: $red2;
   }
 }
 
